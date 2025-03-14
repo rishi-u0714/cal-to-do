@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Choose App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Select an App</h1>
+
+<select id="appSelector" onchange="loadApp()">
+  <option value="">-- Select an App --</option>
+  <option value="calculator.html">Grade Calculator</option>
+  <option value="todo.html">To-Do List</option>
+</select>
+
+<script>
+  function loadApp() {
+    let selectedApp = document.getElementById("appSelector").value;
+    if (selectedApp) {
+      window.location.href = selectedApp;
+    }
+  }
+</script>
+
+</body>
+</html>
