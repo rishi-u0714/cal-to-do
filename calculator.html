@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grade Calculatar</title>
+  <link rel="stylesheet" href="./calstylesheet.css"/>
+  <script src="./calindex.js"></script>
+</head>
+<body>
+<div id="header">
+  <h1>Grade Calculator</h1>
+  <button onclick="goBack()">⬅ Back</button>
+</div>
+<section id="content">
+  Enter The Number Of Subjects:
+  <input type="number" id="subjectcount" placeholder="1" min="1" max="30"/>
+  <button onclick="generatefields()">Generate</button>
+  <div id="subjectscontainer">
+
+  </div>
+  <button onclick="clearFields()">Reset</button>
+  <button onclick="calculate()">Calculate Grade</button>
+</section>
+</body>
+</html>
